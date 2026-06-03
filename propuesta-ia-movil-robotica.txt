@@ -1,0 +1,43 @@
+Hola,
+
+Leí su descripción con detalle y me interesa porque combina exactamente las dos áreas en las que trabajo a diario: integración de IA en producto y desarrollo móvil con foco en escalabilidad. La parte de robótica la abordo desde el ángulo en que tengo experiencia real: la capa de software que conecta hardware con sistemas de decisión basados en IA (visión, control por LLM, automatización de tareas).
+
+Soy David Valor, AI Engineer y Full-Stack Developer desarrollando desde 2019. Mi trabajo actual combina React + TypeScript + AWS para plataformas corporativas y, en paralelo, construcción de pipelines IA con Python, LangChain y APIs de OpenAI, Anthropic y Llama. Ya entregué sistemas que van desde bots conversacionales en vivo sobre Twitch (Python + LangChain + Llama 2) hasta pipelines de generación masiva de contenido SEO con validación humana en el loop.
+
+QUÉ APORTO A ESTE PROYECTO:
+
+1. Funcionalidades basadas en IA
+   - Integración de LLMs en backends existentes o nuevos.
+   - RAG sobre documentación propia, agentes con tool-calling y memoria de sesión.
+   - Control real de costos por token y cacheo, no demos caras.
+
+2. Aplicaciones móviles multiplataforma
+   - MVPs móviles funcionales iOS / Android en 3 a 5 semanas.
+   - Integración nativa con APIs de IA y sincronización con backend en la nube.
+
+3. Soluciones de robótica (capa software)
+   - Sistemas de control y orquestación que conectan hardware con modelos de IA.
+   - Pipelines de visión, procesamiento de sensores y toma de decisiones basada en LLM.
+   - Si el proyecto requiere firmware o electrónica de bajo nivel, propongo trabajar coordinado con un especialista de hardware — soy transparente con lo que cubro y lo que no.
+
+CÓMO PROPONGO TRABAJAR:
+
+- Reunión inicial de 30 minutos para entender alcance real, restricciones técnicas y presupuesto.
+- Documento de arquitectura + estimación de costos de API y de infraestructura ANTES de empezar a codificar.
+- Entregas semanales con demo funcional. Sin sorpresas al final.
+- Código documentado, repositorio limpio y handoff claro.
+
+DIFERENCIAL:
+
+Soy ingeniero, no prompt-engineer. Cuando el modelo falla o el costo se dispara, abro el stack trace y resuelvo. Eso es lo que distingue un MVP que llega a producción de uno que muere en la demo.
+
+Disponibilidad inmediata. Trabajo remoto, en zona horaria flexible. Español nativo, inglés técnico.
+
+Me gustaría una primera llamada para entender el alcance específico: cantidad de funcionalidades IA, plataformas móviles objetivo (iOS, Android o ambas) y qué tipo de robótica están considerando (industrial, doméstica, educativa, drones). Con eso puedo darles una propuesta cerrada con fases, tiempos y precio.
+
+Quedo atento.
+
+David Valor
+AI Engineer & Full-Stack Developer
+davidvalorwork@gmail.com
+linkedin.com/in/david-valor-5ba08a143

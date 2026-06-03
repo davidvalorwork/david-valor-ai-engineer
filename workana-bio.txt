@@ -1,0 +1,30 @@
+AI Engineer & Full-Stack Developer | Desde 2019 construyendo sistemas que entregan resultados, no demos.
+
+Ayudo a empresas y emprendedores a integrar IA generativa en su producto sin descontrolar costos ni perder calidad. No automatizo por tendencia: estructuro sistemas medibles donde cada token tiene un porqué.
+
+QUÉ HAGO POR TI (con tiempos reales de entrega):
+• Landing page optimizada para conversión + SEO — 2 a 4 días
+• Chatbot IA en tu web (con tu info, RAG) — 3 a 5 días
+• Integración LLM (OpenAI / Claude / Llama) en backend existente — 2 a 5 días
+• Automatización de proceso repetitivo con IA + APIs — 3 a 7 días
+• Agente conversacional (WhatsApp / Telegram / Twitch) — 4 a 7 días
+• Pipeline de generación masiva de contenido (cientos de landings/posts SEO) — 1 a 2 semanas
+• Aplicación web full-stack a medida (MVP funcional) — 2 a 4 semanas
+• Aplicación móvil (iOS / Android) MVP — 3 a 5 semanas
+• Auditoría y optimización de costos API LLM — 1 a 2 días
+
+STACK:
+Python · Node.js · React · LangChain · LlamaIndex · OpenAI · Anthropic Claude · Llama · PostgreSQL · REST · WebSocket · AWS
+
+CÓMO TRABAJO:
+1. Entiendo tu negocio antes de tocar código
+2. Te muestro el costo real (tokens, infra, mantenimiento) antes de empezar
+3. Entregas semanales con demo funcional, no promesas
+4. Código documentado y handoff claro al final
+
+DIFERENCIAL:
+Soy ingeniero, no prompt-engineer. Cuando el agente falla y nadie sabe por qué, yo abro el stack trace. Eso te ahorra semanas de bugs invisibles en producción.
+
+Disponible para proyectos cortos (1-2 semanas), MVPs (1-2 meses) y mantenimiento continuo. Trabajo en español e inglés.
+
+¿Tienes una idea concreta o quieres validar si la IA aplica a tu caso? Escríbeme — la primera conversación es gratis y honesta: si no te conviene, te lo digo.

@@ -1,0 +1,99 @@
+EXPERIENCIA LABORAL — DAVID VALOR
+
+================================================================
+
+DESARROLLADOR FRONTEND · SMART COMPLIANCE (SIA)
+Octubre 2024 — Actualidad · Remoto (cliente Chile)
+
+Consultora chilena especializada en permisos y cumplimiento ambiental. Su producto principal analiza datos del Sistema de Evaluación de Impacto Ambiental (SEIA) y gestiona planes de acción, compromisos y controles ambientales para clientes corporativos.
+
+Responsabilidades:
+- Desarrollo del módulo "management-design": diseño de planes de acción, compromisos, controles y ciclos.
+- Construcción de UI de timeline con tablas, filtros y paginación cursor-based sobre AppSync GraphQL.
+- Implementación de lambdas (putAllControls, executePlans) para validaciones de consistencia de fechas y periodicidades.
+- Bug fixing extensivo de ciclos pasado/futuro y diferencias visuales entre ciclos.
+- Reglas de negocio: prohibir periodicidades de control superiores al compromiso, límites de controles y acciones, mutaciones al restablecer inconsistencias.
+- Integración de sidebar, vista consolidada "Todos los compromisos" y feature "no-controls".
+
+Stack: React, TypeScript, Apollo Client, GraphQL, AppSync, AWS (Cognito, Amplify, Lambda, S3, RDS PostgreSQL), Vite.
+
+================================================================
+
+DESARROLLADOR FULL-STACK · GRUPOSIP / ANALYTIKO
+Mayo 2021 — Mediados 2024 · Remoto (modalidad por facturación)
+
+Grupo Analytiko construye soluciones tecnológicas para unidades de seguridad corporativa, análisis de inteligencia criminal, delitos financieros y prevención de fraude. Trabajé sobre el producto Analytiko.
+
+Responsabilidades:
+- Mantenimiento y evolución del producto Analytiko: gestión de casos de inteligencia, casos externos e internos para detección de fraudes.
+- Desarrollo de módulo de Grupos (refactor completo).
+- Ingestas de datos con procesamiento Python sobre dataframes (ticket AN-216: modificar ingesta AT37 con tasa de cambio).
+- Empaquetado e instalación del producto (ticket AN-223).
+- Scripts de operación: start.sh, drop-databases, gestión de firmas.
+- Despliegues SSH y Anydesk, gestión de imágenes Docker en Dockerhub corporativo.
+- Coordinación vía Jira y Notion, diseños en Figma.
+
+Stack: Node.js, Angular CLI, MSSQL / SQL Server, Python (pandas), Docker, GCP, GitHub.
+
+================================================================
+
+DESARROLLADOR FULL-STACK Y LÍDER TÉCNICO · ALTYRO
+Mayo 2021 — 2022 (mantenimiento esporádico hasta 2024) · Remoto (Chile)
+
+Plataforma de envíos y logística para Chile. Gestioné el producto end-to-end y coordiné el equipo de desarrollo.
+
+Responsabilidades:
+- Sistema completo de gestión de envíos: mantenedor de Solicitudes, módulo de Comunas, módulo de Órdenes por tienda.
+- Flujo de agendamiento con integración de pagos Flow.
+- Envíos masivos de notificaciones por mail y WhatsApp con plantillas configurables.
+- Paginadores, exports de datos, dashboards operativos.
+- Gestión de equipo: onboarding de desarrolladores en GitHub, decisiones técnicas y de personal.
+- DevOps: scripts bash de commit y deploy a entornos test y producción.
+
+Stack: full-stack web con backend, frontend, integraciones de pagos y mensajería masiva.
+
+================================================================
+
+DESARROLLADOR FULL-STACK INDEPENDIENTE · FREELANCE
+2019 — Presente
+
+Desde 2019 trabajo en proyectos propios y por contrato construyendo aplicaciones web, aplicaciones móviles, landing pages y sistemas backend con foco en IA generativa.
+
+Áreas:
+- Integración de LLMs (OpenAI, Anthropic Claude, Llama) en backends de producto.
+- Pipelines de generación masiva de contenido optimizado para SEO con validación humana.
+- Chatbots y agentes conversacionales sobre web, Twitch, WhatsApp y Telegram.
+- RAG sobre documentación privada del cliente.
+- Optimización de costos por token y cacheo en flujos LLM.
+
+================================================================
+
+PROYECTOS PROPIOS DESTACADOS
+
+CrystalClear TECH
+Plataforma de muestra visual y automatización de contenido IA. Sistema que combina generación de assets visuales coherentes con narrativa de marca y pipeline de publicación automatizada.
+
+IA en Vivo sobre Twitch — workrolavx
+Bot conversacional construido con Python, LangChain y Llama 2 que responde comentarios de espectadores en stream en tiempo real, con manejo de contexto por sesión.
+
+Pipeline de Landing Pages SEO Masivas
+Sistema de generación de más de 500 landing pages optimizadas para SEO con control de costos LLM, deduplicación semántica y validación humana en el loop.
+
+Paquete IA Engineer David
+Servicio de extremo a extremo para empresas y emprendedores: desarrollo web más automatización IA gestionada por ingeniero, con métricas de conversión y costos transparentes.
+
+================================================================
+
+FORMACIÓN
+
+Universidad Nacional Experimental de las Fuerzas Armadas (UNEFA) — Venezuela
+
+================================================================
+
+UBICACIÓN Y DISPONIBILIDAD
+
+Las Salinas, Estado Vargas, Venezuela.
+Trabajo remoto, híbrido o presencial. Disponible para proyectos cortos, MVPs y mantenimiento continuo. Español nativo, inglés técnico-profesional.
+
+Contacto: davidvalorwork@gmail.com
+LinkedIn: linkedin.com/in/david-valor-5ba08a143

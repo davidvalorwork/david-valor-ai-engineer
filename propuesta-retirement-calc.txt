@@ -1,0 +1,32 @@
+Hi,
+
+Long-term maintenance on a Next.js + TypeScript platform is exactly the kind of engagement I'm looking for right now. Maintenance work done well — small reliable releases, careful refactors, real test coverage — is undervalued by most freelancers, and it's where I do my best work.
+
+I'm David Valor, AI Engineer and Full-Stack Developer since 2019. My current production stack is Next.js / React with TypeScript, Node.js, Python, PostgreSQL and AWS. I've spent the last year on Smart Compliance, a Chilean platform where I maintain and extend a React + TypeScript + GraphQL codebase under active client use, so I'm fluent in the discipline of touching code that real users depend on without breaking it.
+
+What I bring to this engagement:
+
+1. Next.js 14 + TypeScript fluency
+App Router, server components, server actions, SSR/ISR/SSG trade-offs, route handlers, middleware. Strict TypeScript with proper typing of API boundaries, not "any" everywhere.
+
+2. Maintenance discipline
+I read the existing codebase before I write a line. I follow the conventions already in place instead of imposing my own. I open small, reviewable PRs. I write tests for the bug I'm fixing so it doesn't come back. I document the why, not the what.
+
+3. Insurance / financial calculation context
+Retirement calculations are a domain where edge cases bite hard — rounding errors compound across decades, regulatory assumptions change, and a wrong number erodes user trust instantly. I treat numeric logic with the same rigor as security code: unit tests covering boundary conditions, explicit handling of compounding intervals, precision-aware libraries instead of native floats where it matters.
+
+4. Independent delivery
+I can take a feature spec or a bug report and ship it without daily handholding. Weekly or bi-weekly check-ins, async updates in writing, demo of working changes on a preview deploy.
+
+How I propose to start:
+
+- A short discovery call to walk through the codebase, current pain points, and the next 2–3 features in the pipeline.
+- A week of paid onboarding where I read the code, document my understanding of the system, and ship one small fix to prove the working rhythm before committing to bigger items.
+- After that, a steady cadence of feature work and maintenance: bug fixes within 24–48 hours of report, features sized in 1–2 week increments with clear acceptance criteria.
+
+Rate: 40 USD/hour for ongoing maintenance. Availability: 10–20 hours per week consistently, flexible up if a feature push requires it. Timezone GMT-4 with strong overlap with US business hours.
+
+I'm not looking for a one-off contract. If the rhythm works, I want this to be a relationship measured in years, not sprints.
+
+David Valor
+AI Engineer & Full-Stack Developer

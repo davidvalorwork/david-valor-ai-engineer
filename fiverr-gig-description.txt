@@ -1,0 +1,25 @@
+Got an idea but no time, team or technical know-how to build it? I turn it into a working product — fast.
+
+I'm an AI Engineer & Full-Stack Developer with 6+ years shipping production systems. I specialize in building apps, web platforms and automations powered by AI (ChatGPT, Claude, LangChain, RAG) in days, not months.
+
+WHAT I BUILD:
+✅ AI chatbots & agents (web, WhatsApp, Telegram)
+✅ Web & mobile apps (Next.js, React, React Native)
+✅ SaaS MVPs with auth, payments & dashboards
+✅ Custom automations connecting any APIs
+✅ RAG systems that answer with YOUR data
+✅ Landing pages optimized for conversion
+
+WHY ME:
+🚀 Record-time delivery (3–14 days)
+💰 Predictable cost (no surprises on AI tokens)
+🔒 Clean, secure, production-ready code
+📦 Full source + documentation included
+💬 Daily updates, English fluent
+🎯 I read stack traces before I open ChatGPT
+
+I've shipped fraud-detection platforms for banks, compliance tools used by corporate clients, AI agents running live on Twitch, and pipelines generating 500+ SEO pages with Claude.
+
+Send me your idea — even half-baked. I'll tell you honestly if I can build it, how long it'll take, and what it'll cost. First message is free.
+
+Let's build.

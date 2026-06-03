@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Space+Grotesk:wght@700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1280px; height: 720px; overflow: hidden;
+    background: #0d0d0d;
+    font-family: 'Inter', sans-serif; color: white;
+    position: relative;
+  }
+  .bg-stripe {
+    position: absolute; inset: 0;
+    background: linear-gradient(110deg,
+      #ff6b35 0%, #ff6b35 35%,
+      #0d0d0d 35%, #0d0d0d 100%);
+  }
+  .noise {
+    position: absolute; inset: 0; opacity: 0.06;
+    background-image: radial-gradient(circle at 50% 50%, white 0.5px, transparent 1px);
+    background-size: 3px 3px;
+  }
+  .content {
+    position: relative; z-index: 2;
+    display: flex; align-items: center; height: 100%;
+    padding: 0 80px; gap: 50px;
+    flex-direction: row-reverse;
+  }
+  .photo-wrap {
+    flex-shrink: 0;
+    width: 380px; height: 380px;
+    border-radius: 50%;
+    border: 6px solid #0d0d0d;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    background: white;
+  }
+  .photo-wrap img { width: 100%; height: 100%; object-fit: cover; }
+  .text-block { flex: 1; }
+  .top-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700; font-size: 22px;
+    color: #0d0d0d; background: white;
+    display: inline-block;
+    padding: 6px 14px; margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  h1 {
+    font-size: 110px; font-weight: 900; line-height: 0.92;
+    letter-spacing: -3px; margin-bottom: 28px;
+    color: white;
+  }
+  h1 .arrow { color: #ff6b35; font-size: 130px; }
+  .sub {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px; font-weight: 700;
+    color: #ff6b35; letter-spacing: 1px;
+  }
+  .price-tag {
+    position: absolute; top: 60px; left: 80px;
+    background: #ff6b35; color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700; font-size: 26px;
+    padding: 12px 24px; border-radius: 8px;
+    transform: rotate(-4deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    z-index: 3;
+  }
+</style>
+</head>
+<body>
+  <div class="bg-stripe"></div>
+  <div class="noise"></div>
+  <div class="price-tag">FROM $75</div>
+  <div class="content">
+    <div class="photo-wrap"><img src="profile.png"></div>
+    <div class="text-block">
+      <div class="top-label">FULL-STACK + AI</div>
+      <h1>IDEA <span class="arrow">→</span><br>WORKING<br>APP</h1>
+      <div class="sub">IN 7 DAYS · WEB · MOBILE</div>
+    </div>
+  </div>
+</body>
+</html>

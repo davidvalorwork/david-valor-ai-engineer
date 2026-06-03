@@ -1,0 +1,17 @@
+1. Describe your project in detail. What are you trying to build? What problem does it solve? Who is the end user? The more context, the faster I can start.
+
+2. Which features do you need in this delivery? List the must-haves vs nice-to-haves. If unsure, share examples of apps/sites you like and what specifically you want to copy or improve.
+
+3. Do you have any existing assets or accounts? Designs (Figma, sketches), brand colors/logo, domain, hosting, database, API keys (OpenAI, Claude, Stripe, etc.). Share what you have — I'll tell you what's missing.
+
+4. What's your target platform? Web only, mobile (iOS/Android), WhatsApp/Telegram bot, internal tool, public SaaS, etc.
+
+5. Who will use the AI and how often? Estimated number of users and queries per day/month. This lets me size infrastructure and estimate token costs accurately.
+
+6. Do you have content or documents the AI should learn from? For RAG/chatbots: share docs, FAQs, product info, scripts. If not, tell me where the AI should pull info from.
+
+7. Any preferences on stack or hosting? If your team already uses Next.js, Supabase, Vercel, AWS, etc., let me know. Otherwise I'll pick the best fit for your budget.
+
+8. What's your deadline and budget flexibility? Hard deadline or soft? If scope grows mid-project, is there room to upgrade the package?
+
+9. How do you prefer to communicate? Daily Fiverr messages, Loom videos, scheduled calls (Google Meet/Zoom). I adapt to your rhythm.

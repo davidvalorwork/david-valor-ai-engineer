@@ -1,0 +1,27 @@
+Hi,
+
+SellSide caught my attention because it sits exactly where I work best: a live production codebase with active sprints, LLM features in the middle of being built, and a data pipeline backbone that has to be reliable. I'd rather join an in-progress system and ship real increments than start something from scratch.
+
+Quick context: I'm David Valor, AI Engineer and Full-Stack Developer since 2019. Current stack day to day: Next.js / React with TypeScript, Node.js, Python, PostgreSQL, AWS, Anthropic Claude and OpenAI APIs. I work remotely with clients in the Americas and Europe.
+
+Addressing your four required items:
+
+1) Data pipeline / scraping project
+At Grupo Analytiko (corporate intelligence and anti-fraud platform used by banks) I built and maintained the data ingestion layer for the Analytiko product. Multi-source ingestion of structured external feeds, normalization with Python and pandas dataframes, deduplication, and persistence into SQL Server with PL-equivalent stored procedures. One specific ticket I shipped: AN-216, an ingestion of the AT37 dataset with currency conversion logic applied at ingest time. On my own I also built a pipeline that generates 500+ SEO landing pages using Anthropic Claude with deduplication, cost-per-token control, and a human-in-the-loop validation step before publishing. I haven't shipped Apify or n8n specifically in production, but I've integrated equivalent workflow orchestration and scraper output handling, and I ramp up on those tools fast — they're well-documented and the patterns map directly to what I already do.
+
+2) Supabase schema or PL/pgSQL function from scratch
+At Smart Compliance I work daily with PostgreSQL (RDS) under AppSync. I've designed schemas for environmental action plans, compromises, controls and cycles, including the relational integrity and temporal consistency rules. One concrete example: I wrote the validation logic that prohibits control periodicities greater than the parent compromise periodicity, enforced both at database level and in the lambda layer (putAllControls, executePlans). Schema-wise, I designed cursor-based paginated views and the indexing strategy for timeline queries that touch tens of thousands of rows. I'm comfortable with RLS policies and edge functions — I'd want one quick call to confirm your current schema conventions before writing anything against your codebase.
+
+3) Real estate or property data experience
+Direct real estate experience: none. I want to be honest about this. What I do have is adjacent and transferable: three years building a case-aggregation product over external data sources (Analytiko), production experience with property-style scoring/weighting logic in fraud detection, and a year on Smart Compliance which is property-adjacent (environmental permits on land and construction projects in Chile). I learn domains by reading the codebase and the existing models, not by pretending I already know them.
+
+4) Hourly rate and availability
+Rate: 45 USD/hour. I can flex this for longer engagements once we know the rhythm.
+Availability: 15–20 hours per week immediately, with capacity to scale to 25 if sprint load requires it. Timezone: GMT-4 (Venezuela), with strong overlap with US Eastern and Pacific business hours. Async-first but available for daily standups.
+
+Why I think I'm a fit: I read stack traces before I open Claude. I treat LLM features as engineering problems with measurable cost, latency and failure modes, not magic. I deliver weekly with functional demos and I document what I touch so the next engineer doesn't fight my code.
+
+If you want references, a closer look at past work or a 30-minute discovery call, I'm available this week.
+
+David Valor
+AI Engineer & Full-Stack Developer

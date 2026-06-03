@@ -1,0 +1,51 @@
+Hola,
+
+Su proyecto cruza tres áreas en las que tengo experiencia directa: chatbots con NLP/LLM, integración con APIs corporativas críticas y desarrollo para el sector bancario. Por eso quise responder enseguida.
+
+Soy David Valor, AI Engineer y Full-Stack Developer desarrollando desde 2019. Entre 2021 y 2024 trabajé como desarrollador full-stack en Grupo Analytiko / Gruposip, donde construí y mantuve la plataforma Analytiko, un sistema de gestión de casos de inteligencia y detección de fraudes utilizado por unidades de seguridad corporativa y bancos. Esa experiencia me dio el contexto exacto que su proyecto necesita: trato con datos sensibles, requerimientos de auditoría, control de accesos, integraciones con sistemas internos del banco y respuesta bajo SLA. Sé lo que implica que un sistema deba ser seguro Y rápido al mismo tiempo.
+
+QUÉ APORTO A ESTE PROYECTO:
+
+1. Procesamiento de lenguaje natural sobre consultas bancarias
+   - Integración de LLMs (OpenAI, Anthropic Claude, Llama) con prompt engineering específico para banca.
+   - Clasificación de intenciones (saldos, transferencias, productos, reclamos, fraude).
+   - RAG sobre documentación interna del banco para que el bot responda con información REAL y verificable, no inventada.
+   - Detección de consultas sensibles que deben escalar a humano (fraude, bloqueo de tarjeta, lavado).
+
+2. Integración con APIs bancarias
+   - Diseño de capa de orquestación que aísla las APIs core del LLM (el modelo NUNCA toca la API directamente).
+   - Validaciones de identidad, OTP y autenticación multifactor en flujos transaccionales.
+   - Manejo de errores con fallback a operador humano cuando el bot no tiene certeza suficiente.
+
+3. Arquitectura escalable y segura
+   - Stateless backend horizontalmente escalable (Node.js / Python).
+   - Cacheo de respuestas frecuentes para reducir costo de tokens en consultas repetidas (los FAQs no necesitan llamar al LLM cada vez).
+   - Logging completo para auditoría, trazabilidad de decisiones del modelo y cumplimiento regulatorio.
+   - Rate limiting, sanitización de input y defensa contra prompt injection.
+
+4. Control de costos LLM
+   - Estimación previa de costo por interacción y por mes según volumen esperado.
+   - Routing inteligente: modelos baratos para FAQs, modelos grandes solo cuando la consulta lo justifica.
+
+CÓMO PROPONGO TRABAJAR:
+
+- Reunión inicial para entender alcance: qué consultas cubrir en fase 1, qué APIs bancarias existen y qué nivel de personalización requieren las respuestas.
+- Documento técnico con arquitectura, estimación de costos LLM mensuales y plan de seguridad ANTES de codificar.
+- Entrega por fases: MVP con consultas frecuentes resueltas → integración con APIs core → flujos transaccionales con autenticación → optimización y escalado.
+- Demo funcional semanal. Repositorio documentado y handoff al equipo del banco al cierre.
+
+DIFERENCIAL:
+
+He trabajado en el sector. Sé lo que pide compliance, sé que un bot que inventa un saldo es un incidente regulatorio, y sé cómo arquitecturar para que eso sea imposible por diseño, no por buena suerte.
+
+Disponibilidad inmediata, remoto, español nativo e inglés técnico. Trabajo solo o coordinando con el equipo interno del banco.
+
+Para cotizar en firme necesito una llamada de 30 minutos donde me cuenten: bancos objetivo, canales (web, app móvil, WhatsApp), volumen mensual estimado de interacciones, y qué APIs internas ya tienen expuestas. Con eso entrego propuesta cerrada con fases, tiempos y precio.
+
+Quedo atento.
+
+David Valor
+AI Engineer & Full-Stack Developer
+Ex-Grupo Analytiko (plataforma de inteligencia y antifraude para sector financiero)
+davidvalorwork@gmail.com
+linkedin.com/in/david-valor-5ba08a143

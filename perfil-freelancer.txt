@@ -1,0 +1,56 @@
+AI Engineer & Full-Stack Developer — desarrollando desde 2019
+
+Construyo sistemas en producción que combinan desarrollo web full-stack con integración real de IA generativa. No vendo demos: entrego producto que funciona, se mantiene, escala y tiene costos predecibles.
+
+LO QUE OFREZCO
+
+Desarrollo web y móvil
+• Aplicaciones web full-stack (Next.js, React, Node.js, Python)
+• Aplicaciones móviles iOS y Android (MVP en 3-5 semanas)
+• Landing pages optimizadas para conversión y SEO (2-4 días)
+• Dashboards internos y paneles administrativos
+• Mantenimiento y evolución de plataformas en producción
+
+Integración de IA generativa
+• Integración de LLMs (OpenAI, Anthropic Claude, Llama) en backends existentes
+• Chatbots y agentes conversacionales (web, WhatsApp, Telegram, Twitch)
+• RAG sobre tu documentación — la IA responde con TU información, no inventa
+• Pipelines de generación masiva de contenido con validación humana
+• Automatización de procesos repetitivos con IA + APIs
+• Auditoría y optimización de costos por token
+
+Bases de datos y backend
+• PostgreSQL, SQL Server, MongoDB
+• REST y GraphQL APIs
+• Arquitecturas event-driven y escalables
+• AWS (Lambda, Cognito, Amplify, S3, RDS), GCP
+
+STACK PRINCIPAL
+React, Next.js, TypeScript, Node.js, Python, LangChain, PostgreSQL, AWS, Docker, Apollo Client, GraphQL.
+
+EXPERIENCIA EN PRODUCCIÓN
+
+Smart Compliance (Chile, actual): React + TypeScript + AWS para plataforma de compliance ambiental usada por clientes corporativos.
+
+Grupo Analytiko (2021–2024): Plataforma de inteligencia y antifraude para unidades de seguridad corporativa y bancos. Node.js, Angular, SQL Server, Python.
+
+Altyro (2021–2022): Plataforma de logística para Chile. Owner técnico end-to-end y líder de equipo.
+
+Proyectos propios: bot conversacional en vivo sobre Twitch (Python + LangChain + Llama 2), pipeline de 500+ landings SEO con Claude, CrystalClear TECH.
+
+CÓMO TRABAJO
+
+1. Llamada inicial de 30 minutos para entender el problema, no solo la solicitud.
+2. Documento de arquitectura + estimación real de costos (infra + tokens IA) antes de codificar.
+3. Entregas semanales con demo funcional, no promesas.
+4. Código documentado, repositorio limpio, handoff claro al cierre.
+
+DIFERENCIAL
+
+Soy ingeniero, no prompt-engineer. Cuando el modelo falla o el costo se dispara, abro el stack trace y resuelvo. Hablo el lenguaje del negocio: presupuesto, ROI, uptime, seguridad. Traduzco capacidad técnica en resultado medible.
+
+DISPONIBILIDAD
+
+Remoto, híbrido o presencial. Zona horaria GMT-4 con overlap fuerte con horarios US. Español nativo, inglés técnico-profesional. Acepto proyectos cortos (1-2 semanas), MVPs (1-2 meses) y mantenimiento continuo.
+
+La primera conversación es gratis. Si tu caso no es para mí, te lo digo de frente.

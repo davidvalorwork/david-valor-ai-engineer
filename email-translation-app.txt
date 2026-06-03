@@ -1,0 +1,29 @@
+Subject: Your English→Spanish document translation app — next steps
+
+Hi there,
+
+Thanks for reaching out about the document translation app. This is squarely in what I do — I'm an AI Engineer and full-stack developer who builds production LLM systems that ship and survive, not demos. Translation that holds up on real documents (formatting, terminology, edge cases) is an engineering problem, and that's exactly how I'll treat it.
+
+Here's how I see the build:
+
+- Upload → translate → export. Users drop in an English document (PDF, DOCX, plain text), the app translates it to Spanish, and returns a clean file with the original layout preserved as closely as possible.
+- Quality over a raw API call. I use LLMs (Claude / GPT) with a glossary and context layer so domain terms stay consistent across the whole document instead of drifting page to page. If you have preferred terminology or past translations, I feed those in.
+- Cost and latency are first-class. I size the infrastructure and estimate cost-per-document up front, so you know what each translation runs before we scale.
+
+Before I write any code, I scope it. A few questions so I can give you a real architecture and a real estimate:
+
+1. Document types and volume — what formats (PDF, Word, scanned images?), and roughly how many documents per day/month?
+2. Layout fidelity — does the output need to match the original formatting exactly (tables, headers, images), or is clean readable text enough?
+3. Platform — web app, internal tool, or mobile?
+4. Terminology — any industry-specific vocabulary, glossaries, or sample translations I should match?
+5. Timeline and budget — hard deadline or flexible?
+
+Once I have those, I'll send back a written architecture, a cost estimate (infra + AI tokens), and a delivery timeline. I work in weekly increments with a functional demo each Friday, so you see progress and can redirect early.
+
+Native Spanish, professional English, working remotely across the Americas and Europe — so I'm reviewing the Spanish output with a native eye, not just trusting the model.
+
+Looking forward to the details.
+
+Best,
+David Valor
+AI Engineer & Full-Stack Developer
