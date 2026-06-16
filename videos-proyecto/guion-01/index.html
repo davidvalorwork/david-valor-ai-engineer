@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      [data-composition-id="root"] {
+        position: absolute;
+        inset: 0;
+        background: #000;
+        overflow: hidden;
+        font-family: "Inter", sans-serif;
+      }
+      #vid {
+        position: absolute;
+        inset: 0;
+        width: 1080px;
+        height: 1920px;
+        object-fit: cover;
+        z-index: 0;
+      }
+      #caps {
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        top: 1360px;
+        height: 320px;
+        z-index: 5;
+      }
+      #caps .cg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        gap: 6px 20px;
+        opacity: 0;
+        will-change: transform, opacity;
+      }
+      #caps .w {
+        font-size: 66px;
+        font-weight: 800;
+        line-height: 1.06;
+        color: #80968f;
+        text-shadow: 0 4px 18px rgba(0, 0, 0, 0.85), 0 0 2px rgba(0, 0, 0, 0.9);
+      }
+      #caps .w.emph {
+        font-weight: 900;
+        color: #1d8c83;
+      }
+      #caps .w.num {
+        font-weight: 900;
+        color: #b6953c;
+        font-variant-numeric: tabular-nums;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-composition-id="root" data-width="1080" data-height="1920">
+      <video
+        id="vid"
+        src="source-tight.mp4"
+        data-start="0"
+        data-duration="37.86"
+        data-track-index="0"
+        muted
+        playsinline
+      ></video>
+      <audio
+        id="aud"
+        src="source-tight.mp4"
+        data-start="0"
+        data-duration="37.86"
+        data-track-index="2"
+        data-volume="1"
+      ></audio>
+
+      <!-- SFX -->
+      <audio id="sfx-ding" src="sfx/ding.wav" data-start="2.46" data-duration="0.55" data-track-index="3" data-volume="0.5"></audio>
+      <audio id="sfx-pop1" src="sfx/pop.wav" data-start="9.6" data-duration="0.14" data-track-index="4" data-volume="0.6"></audio>
+      <audio id="sfx-pop2" src="sfx/pop.wav" data-start="18.9" data-duration="0.14" data-track-index="4" data-volume="0.6"></audio>
+      <audio id="sfx-pop3" src="sfx/pop.wav" data-start="22.08" data-duration="0.14" data-track-index="4" data-volume="0.6"></audio>
+      <audio id="sfx-pop4" src="sfx/pop.wav" data-start="34.82" data-duration="0.14" data-track-index="4" data-volume="0.6"></audio>
+      <audio id="sfx-whoosh" src="sfx/whoosh.wav" data-start="37.45" data-duration="0.55" data-track-index="5" data-volume="0.6"></audio>
+
+      <!-- Captions -->
+      <div id="caps"></div>
+
+      <!-- Outro reutilizable "Sígueme" -->
+      <div
+        id="outro"
+        data-composition-id="follow-outro"
+        data-composition-src="compositions/follow-outro.html"
+        data-start="37.86"
+        data-duration="3.0"
+        data-width="1080"
+        data-height="1920"
+        data-track-index="1"
+      ></div>
+
+      <script src="captions-data.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var CAPS = window.__CAPTIONS || [];
+          var caps = document.getElementById("caps");
+          CAPS.forEach(function (g, gi) {
+            var d = document.createElement("div");
+            d.className = "cg";
+            d.id = "cg" + gi;
+            g.words.forEach(function (w, wi) {
+              var s = document.createElement("span");
+              s.className = "w" + (w.type === "emph" ? " emph" : w.type === "num" ? " num" : "");
+              s.id = "cg" + gi + "w" + wi;
+              s.textContent = w.text;
+              d.appendChild(s);
+            });
+            caps.appendChild(d);
+          });
+
+          function bright(t) {
+            return t === "emph" ? "#26d0ce" : t === "num" ? "#ffd166" : "#ffffff";
+          }
+
+          var tl = gsap.timeline({ paused: true });
+          CAPS.forEach(function (g, gi) {
+            var el = document.getElementById("cg" + gi);
+            tl.fromTo(
+              el,
+              { opacity: 0, y: 34, scale: 0.9 },
+              { opacity: 1, y: 0, scale: 1, duration: 0.18, ease: "back.out(1.6)" },
+              g.start,
+            );
+            g.words.forEach(function (w, wi) {
+              tl.to(
+                "#cg" + gi + "w" + wi,
+                { color: bright(w.type), duration: 0.1, ease: "power1.out" },
+                w.t,
+              );
+            });
+            tl.to(el, { opacity: 0, scale: 0.96, duration: 0.1, ease: "power2.in" }, g.end - 0.1);
+            tl.set(el, { opacity: 0, visibility: "hidden" }, g.end);
+          });
+          window.__timelines["root"] = tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

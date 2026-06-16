@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      [data-composition-id="root"] { position: absolute; inset: 0; background: #000; overflow: hidden; font-family: "Inter", sans-serif; }
+      #vid { position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; z-index: 0; }
+      .chip { position: absolute; left: 220px; top: 900px; width: 640px; z-index: 6; opacity: 0; will-change: transform, opacity;
+              filter: drop-shadow(0 10px 24px rgba(0,0,0,0.6)); }
+      #caps { position: absolute; left: 60px; right: 60px; top: 1360px; height: 320px; z-index: 5; }
+      #caps .cg { position: absolute; left: 0; right: 0; top: 0; display: flex; flex-wrap: wrap; justify-content: center;
+                  align-content: flex-start; gap: 6px 20px; opacity: 0; will-change: transform, opacity; }
+      #caps .w { font-size: 66px; font-weight: 800; line-height: 1.06; color: #80968f;
+                 text-shadow: 0 4px 18px rgba(0,0,0,0.85), 0 0 2px rgba(0,0,0,0.9); }
+      #caps .w.emph { font-weight: 900; color: #b25a32; }
+      #caps .w.num { font-weight: 900; color: #b6953c; font-variant-numeric: tabular-nums; }
+    </style>
+  </head>
+  <body>
+    <div data-composition-id="root" data-width="1080" data-height="1920">
+      <video id="vid" src="source-tight.mp4" data-start="0" data-duration="55.875" data-track-index="0" muted playsinline></video>
+      <audio id="aud" src="source-tight.mp4" data-start="0" data-duration="55.875" data-track-index="2" data-volume="1"></audio>
+
+      <!-- SFX -->
+      <audio id="sx1" src="sfx/pop.wav" data-start="4.68" data-duration="0.14" data-track-index="4" data-volume="0.6"></audio>
+      <audio id="sx2" src="sfx/ding.wav" data-start="11.40" data-duration="0.55" data-track-index="3" data-volume="0.5"></audio>
+      <audio id="sx3" src="sfx/ding.wav" data-start="36.70" data-duration="0.55" data-track-index="3" data-volume="0.5"></audio>
+      <audio id="sx4" src="sfx/ding.wav" data-start="39.72" data-duration="0.55" data-track-index="3" data-volume="0.5"></audio>
+      <audio id="sx5" src="sfx/pop.wav" data-start="44.10" data-duration="0.14" data-track-index="4" data-volume="0.6"></audio>
+      <audio id="sx6" src="sfx/pop.wav" data-start="50.56" data-duration="0.14" data-track-index="4" data-volume="0.6"></audio>
+      <audio id="sx7" src="sfx/whoosh.wav" data-start="55.45" data-duration="0.55" data-track-index="5" data-volume="0.6"></audio>
+
+      <!-- Fichas de producto (debajo de la camara) -->
+      <img class="chip" id="chip1" src="products/saturado.png" />
+      <img class="chip" id="chip2" src="products/power-bank.png" />
+      <img class="chip" id="chip3" src="products/freidora.png" />
+      <img class="chip" id="chip4" src="products/smartphone.png" />
+
+      <!-- Subtitulos -->
+      <div id="caps"></div>
+
+      <!-- Outro -->
+      <div id="outro" data-composition-id="follow-outro" data-composition-src="compositions/follow-outro.html"
+           data-start="55.875" data-duration="3.0" data-width="1080" data-height="1920" data-track-index="1"></div>
+
+      <script src="captions-data.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var tl = gsap.timeline({ paused: true });
+
+          // --- captions ---
+          var CAPS = window.__CAPTIONS || [];
+          var caps = document.getElementById("caps");
+          CAPS.forEach(function (g, gi) {
+            var d = document.createElement("div"); d.className = "cg"; d.id = "cg" + gi;
+            g.words.forEach(function (w, wi) {
+              var s = document.createElement("span");
+              s.className = "w" + (w.type === "emph" ? " emph" : w.type === "num" ? " num" : "");
+              s.id = "cg" + gi + "w" + wi; s.textContent = w.text; d.appendChild(s);
+            });
+            caps.appendChild(d);
+          });
+          function bright(t) { return t === "emph" ? "#f96a17" : t === "num" ? "#ffd166" : "#ffffff"; }
+          CAPS.forEach(function (g, gi) {
+            var el = document.getElementById("cg" + gi);
+            tl.fromTo(el, { opacity: 0, y: 34, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.18, ease: "back.out(1.6)" }, g.start);
+            g.words.forEach(function (w, wi) {
+              tl.to("#cg" + gi + "w" + wi, { color: bright(w.type), duration: 0.1, ease: "power1.out" }, w.t);
+            });
+            tl.to(el, { opacity: 0, scale: 0.96, duration: 0.1, ease: "power2.in" }, g.end - 0.1);
+            tl.set(el, { opacity: 0, visibility: "hidden" }, g.end);
+          });
+
+          // --- fichas de producto ---
+          var CHIPS = [
+            { id: "chip1", start: 28.0, end: 31.4 },
+            { id: "chip2", start: 35.4, end: 38.4 },
+            { id: "chip3", start: 38.7, end: 41.7 },
+            { id: "chip4", start: 42.0, end: 45.3 },
+          ];
+          CHIPS.forEach(function (c) {
+            var el = document.getElementById(c.id);
+            tl.fromTo(el, { opacity: 0, y: 30, scale: 0.85 }, { opacity: 1, y: 0, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, c.start);
+            tl.to(el, { opacity: 0, scale: 0.92, duration: 0.2, ease: "power2.in" }, c.end - 0.25);
+            tl.set(el, { opacity: 0, visibility: "hidden" }, c.end);
+          });
+
+          window.__timelines["root"] = tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>
