@@ -1,3 +1,19 @@
 .DS_Store
-.claude/
+.claude/*
+!.claude/skills/
 .agents/
+
+# Videos pesados (renders y fuentes) — no subir; el resto del proyecto de video SÍ se sube
+*.mp4
+*.mov
+*.mkv
+*.webm
+
+# Caché/temporales de HyperFrames
+**/.hyperframes/
+node_modules/
+
+# Modelo whisper local (pesado, no subir)
+_assets/models/
+**/models/faster-whisper-*/
+*.bin
