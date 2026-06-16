@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Valor — Desarrollador Web & AI Engineer en Caracas, Venezuela</title>
+<meta name="description" content="David Valor, desarrollador web full-stack y AI Engineer en Caracas, Venezuela. Apps web y móviles, automatización con IA, chatbots, landing pages y sistemas a producción. Remoto, híbrido o presencial.">
+<meta name="keywords" content="desarrollador web Caracas, programador Caracas, AI engineer Venezuela, desarrollo de apps Venezuela, chatbot IA, landing page, full-stack developer Caracas">
+<link rel="canonical" href="https://davidvalor.vercel.app/">
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#ea5536">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="David Valor — Desarrollador Web & AI Engineer en Caracas">
+<meta property="og:description" content="Apps web y móviles, automatización con IA y sistemas a producción. Caracas, Venezuela — remoto/híbrido/presencial.">
+<meta property="og:url" content="https://davidvalor.vercel.app/">
+<meta property="og:image" content="https://davidvalor.vercel.app/david.jpg">
+<meta property="og:locale" content="es_VE">
+
+<!-- Schema.org: Person + ProfessionalService con ubicación Caracas -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://davidvalor.vercel.app/#david",
+      "name": "David Valor",
+      "jobTitle": "Desarrollador Web & AI Engineer",
+      "email": "mailto:davidvalorwork@gmail.com",
+      "telephone": "+584129967051",
+      "url": "https://davidvalor.vercel.app/",
+      "image": "https://davidvalor.vercel.app/david.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/david-valor-5ba08a143",
+        "https://www.tiktok.com/@davidvalor7",
+        "https://www.instagram.com/dvalorn/"
+      ],
+      "knowsAbout": ["Desarrollo web", "Inteligencia artificial aplicada", "LLM", "RAG", "Node.js", "React", "Python", "Automatización"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Caracas",
+        "addressRegion": "Distrito Capital",
+        "addressCountry": "VE"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://davidvalor.vercel.app/#servicio",
+      "name": "David Valor — Desarrollo Web & IA",
+      "image": "https://davidvalor.vercel.app/david.jpg",
+      "url": "https://davidvalor.vercel.app/",
+      "email": "mailto:davidvalorwork@gmail.com",
+      "telephone": "+584129967051",
+      "priceRange": "$$",
+      "founder": { "@id": "https://davidvalor.vercel.app/#david" },
+      "areaServed": [
+        { "@type": "City", "name": "Caracas" },
+        { "@type": "Country", "name": "Venezuela" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Caracas",
+        "addressRegion": "Distrito Capital",
+        "addressCountry": "VE"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 10.4806, "longitude": -66.9036 },
+      "serviceType": ["Desarrollo de páginas web", "Desarrollo de aplicaciones", "Automatización con IA", "Chatbots / RAG", "Landing pages"]
+    }
+  ]
+}
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=JetBrains+Mono:wght@500&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--orange:#ea5536;--accent:#f96a17;--amber:#ffd166;--bg:#0c0a09;--card:#1a1614;--txt:#f5f3f1;--mut:#b3aaa4}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+  .wrap{max-width:880px;margin:0 auto;padding:0 22px}
+  header{padding:64px 0 40px;border-bottom:3px solid var(--orange)}
+  h1{font-size:clamp(30px,6vw,52px);font-weight:900;letter-spacing:-1.5px;line-height:1.05}
+  .sub{color:var(--accent);font-weight:700;font-size:clamp(15px,2.5vw,20px);margin-top:8px}
+  .loc{color:var(--mut);font-size:15px;margin-top:14px}
+  .loc b{color:var(--txt)}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+  .btn{padding:13px 22px;border-radius:10px;font-weight:700;text-decoration:none;font-size:15px}
+  .btn-p{background:var(--orange);color:#fff}
+  .btn-s{background:var(--card);color:var(--txt);border:1px solid #3a322e}
+  section{padding:38px 0;border-bottom:1px solid #241f1c}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:2px;color:var(--accent);margin-bottom:18px}
+  .lead{font-size:17px;color:var(--txt)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:8px}
+  .card{background:var(--card);border:1px solid #2a2421;border-radius:12px;padding:18px}
+  .card h3{font-size:16px;font-weight:800;margin-bottom:6px}
+  .card p{font-size:14px;color:var(--mut)}
+  .stack{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--mut)}
+  .stack b{color:var(--amber)}
+  footer{padding:40px 0 70px;color:var(--mut);font-size:14px}
+  footer a{color:var(--accent);text-decoration:none}
+  .avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;border:4px solid var(--orange);box-shadow:0 0 0 6px rgba(234,85,54,.15);margin-bottom:20px}
+  .socials{display:flex;gap:14px;flex-wrap:wrap}
+  .soc{display:flex;align-items:center;gap:11px;background:var(--card);border:1px solid #2a2421;border-radius:12px;padding:14px 18px;text-decoration:none;color:var(--txt);font-weight:700;font-size:15px;transition:border-color .2s,transform .2s}
+  .soc:hover{border-color:var(--orange);transform:translateY(-2px)}
+  .soc svg{width:22px;height:22px;fill:var(--accent);flex:none}
+  .soc small{display:block;color:var(--mut);font-weight:400;font-size:12px}
+  .video-wrap{display:flex;justify-content:center}
+
+  /* ---- Animaciones ---- */
+  @keyframes fadeUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+  @keyframes ringPulse{0%,100%{box-shadow:0 0 0 6px rgba(234,85,54,.18)}50%{box-shadow:0 0 0 12px rgba(249,106,23,.30)}}
+  @keyframes glowFloat{0%,100%{transform:translate(-50%,-46%) scale(1);opacity:.45}50%{transform:translate(-50%,-54%) scale(1.18);opacity:.8}}
+  header{position:relative;overflow:hidden}
+  header::before{content:"";position:absolute;top:0;left:50%;width:640px;height:420px;max-width:120%;
+    background:radial-gradient(circle, rgba(234,85,54,.30), transparent 70%);
+    transform:translate(-50%,-50%);filter:blur(22px);animation:glowFloat 9s ease-in-out infinite;z-index:0;pointer-events:none}
+  header .wrap{position:relative;z-index:1}
+  .avatar{animation:fadeUp .7s ease both, ringPulse 4.5s ease-in-out 1s infinite}
+  header h1{animation:fadeUp .7s .08s ease both}
+  header .sub{animation:fadeUp .7s .16s ease both}
+  header .loc{animation:fadeUp .7s .24s ease both}
+  header .cta{animation:fadeUp .7s .32s ease both}
+  .btn{transition:transform .2s, box-shadow .2s}
+  .btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(234,85,54,.4)}
+  .btn-s:hover{transform:translateY(-2px);border-color:var(--orange)}
+  .card{transition:border-color .25s, transform .25s, box-shadow .25s}
+  .card:hover{transform:translateY(-4px);border-color:var(--orange);box-shadow:0 10px 28px rgba(0,0,0,.35)}
+  main>section, body>section{opacity:0;transform:translateY(26px);transition:opacity .6s ease, transform .6s ease}
+  main>section.in, body>section.in{opacity:1;transform:none}
+  .videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(288px,1fr));gap:18px;justify-items:center}
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    section{opacity:1;transform:none}
+    .grid .card{opacity:1}
+    header::before{display:none}
+  }
+
+  /* ---- Centrado + estilo extra ---- */
+  html{scroll-behavior:smooth}
+  header{text-align:center}
+  .avatar{display:block;margin:0 auto 20px;transition:transform .3s ease}
+  .avatar:hover{transform:scale(1.06) rotate(-2deg)}
+  .cta{justify-content:center}
+  .loc{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:wrap}
+  header h1{background:linear-gradient(90deg,#fff,#f96a17,#fff);background-size:200% auto;
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;
+    animation:fadeUp .7s .08s ease both, shine 6s linear infinite}
+  @keyframes shine{to{background-position:200% center}}
+  h2{text-align:center;position:relative;padding-bottom:12px}
+  h2::after{content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:44px;height:3px;background:var(--orange);border-radius:3px}
+  .lead{max-width:660px;margin-left:auto;margin-right:auto;text-align:center}
+  .stack{text-align:center;max-width:620px;margin-left:auto;margin-right:auto}
+  .socials{justify-content:center}
+  .grid{max-width:760px;margin-left:auto;margin-right:auto}
+  .card{text-align:center}
+  a.card{text-decoration:none;color:var(--txt)}
+  .card .tag{display:block;font-size:11px;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px}
+  .grid .card{opacity:0}
+  section.in .grid .card{animation:cardIn .55s ease forwards}
+  section.in .grid .card:nth-child(2){animation-delay:.1s}
+  section.in .grid .card:nth-child(3){animation-delay:.2s}
+  section.in .grid .card:nth-child(4){animation-delay:.3s}
+  @keyframes cardIn{to{opacity:1}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <img class="avatar" src="david.jpg" alt="David Valor — Desarrollador Web en Caracas" width="112" height="112">
+  <h1>David Valor</h1>
+  <div class="sub">Desarrollador Web &amp; AI Engineer</div>
+  <p class="loc">📍 <b>Caracas, Venezuela</b> · Remoto · Híbrido · Presencial · GMT‑4</p>
+  <div class="cta">
+    <a class="btn btn-p" href="/consulta">Agenda tu consulta gratis</a>
+    <a class="btn btn-s" href="https://wa.me/584129967051?text=Hola%20David,%20vi%20tu%20web%20y%20quiero%20cotizar%20un%20proyecto">WhatsApp</a>
+  </div>
+</div></header>
+
+<main class="wrap">
+  <section>
+    <h2>Quién soy</h2>
+    <p class="lead">Ingeniero de software full‑stack desde 2019, especializado en <b>IA generativa aplicada a producto</b>: pipelines LLM, RAG, agentes y control de costos de API. Construyo sistemas que se envían a producción, no demos. Trabajo desde Caracas para clientes de toda Venezuela y el exterior.</p>
+  </section>
+
+  <section>
+    <h2>Qué construyo — casos reales</h2>
+    <p class="lead">Proyectos que he hecho de verdad: apps, plataformas, automatizaciones y agentes de IA. Toca uno para ver el caso.</p>
+    <div class="grid">
+      <a class="card" href="/casos/emprende-teresuelve"><span class="tag">App móvil · Serverless</span><h3>Emprende / TeResuelve</h3><p>App + dashboard + API serverless (AWS Lambda, MongoDB).</p></a>
+      <a class="card" href="/casos/crystalclear-tech"><span class="tag">Web 3D</span><h3>CrystalClear TECH</h3><p>Web con 3D y motion (Next.js, Three.js, GSAP).</p></a>
+      <a class="card" href="/casos/marketplace-scraper"><span class="tag">Automatización</span><h3>Marketplace Scraper</h3><p>Inteligencia de precios en Facebook Marketplace.</p></a>
+      <a class="card" href="/casos/opensanctions-api"><span class="tag">API · Compliance</span><h3>OpenSanctions API</h3><p>Búsqueda de sancionados (KYC/AML), Node + MongoDB.</p></a>
+      <a class="card" href="/casos/gacetas-scraper"><span class="tag">Automatización · Legal</span><h3>Gacetas Oficiales</h3><p>Monitoreo normativo automatizado de Venezuela.</p></a>
+      <a class="card" href="/casos/banca-antifraude"><span class="tag">Fintech · 🔒 Confidencial</span><h3>Antifraude bancario</h3><p>Detección de fraude para banca (Node/Angular/SQL).</p></a>
+      <a class="card" href="/casos/compliance-ambiental"><span class="tag">🔒 Confidencial</span><h3>Compliance ambiental</h3><p>Gestión de cumplimiento (React/GraphQL/Lambda).</p></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Opiniones · Blog</h2>
+    <p class="lead">Mi análisis honesto de las apps venezolanas que están sonando — cuál conviene y por qué.</p>
+    <div class="grid">
+      <a class="card" href="/blog/cashea-opinion"><h3>Cashea</h3><p>El "paga a cuotas" que usa media Venezuela.</p></a>
+      <a class="card" href="/blog/yummy-opinion"><h3>Yummy</h3><p>¿La superapp venezolana está bien hecha?</p></a>
+      <a class="card" href="/blog/ridery-opinion"><h3>Ridery</h3><p>Ride-hailing local vs Yango.</p></a>
+      <a class="card" href="/blog/ubii-pagos-opinion"><h3>Ubii Pagos</h3><p>Fintech con respaldo bancario.</p></a>
+      <a class="card" href="/blog/linkus-opinion"><h3>LinkUs</h3><p>Social + marketplace por ubicación.</p></a>
+    </div>
+    <div style="text-align:center;margin-top:22px"><a class="btn btn-p" href="/blog">Ver todas las opiniones</a></div>
+  </section>
+
+  <section>
+    <h2>Stack</h2>
+    <p class="stack"><b>IA:</b> Python · LangChain · LlamaIndex · OpenAI / Anthropic / Llama · RAG · agentes<br>
+    <b>Backend:</b> Node.js · Python · REST / WebSocket · event‑driven<br>
+    <b>Frontend:</b> React · JavaScript moderno<br>
+    <b>Cloud:</b> AWS (Lambda, Cognito, S3, RDS) · GCP · Docker</p>
+  </section>
+
+  <section>
+    <h2>Cómo trabajo</h2>
+    <p class="lead">Defino el alcance y el costo antes de codear · demo cada viernes · repo limpio + handoff documentado. El ingeniero pilota, la IA copilota.</p>
+  </section>
+</main>
+
+<section class="wrap">
+    <h2>Mira mi trabajo</h2>
+    <div class="videos">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@davidvalor7/video/7642913991899385108" data-video-id="7642913991899385108" style="max-width:325px;min-width:288px;"><section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@davidvalor7">@davidvalor7</a></section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@davidvalor7/video/7637718309504421138" data-video-id="7637718309504421138" style="max-width:325px;min-width:288px;"><section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@davidvalor7">@davidvalor7</a></section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@davidvalor7/video/7634758571078520084" data-video-id="7634758571078520084" style="max-width:325px;min-width:288px;"><section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@davidvalor7">@davidvalor7</a></section></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@davidvalor7/video/7643660594326899986" data-video-id="7643660594326899986" style="max-width:325px;min-width:288px;"><section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@davidvalor7">@davidvalor7</a></section></blockquote>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Sígueme</h2>
+    <div class="socials">
+      <a class="soc" href="https://www.instagram.com/dvalorn/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.5 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>
+        <span>Instagram<small>@dvalorn</small></span>
+      </a>
+      <a class="soc" href="https://www.tiktok.com/@davidvalor7" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M16.5 3c.3 2.1 1.5 3.4 3.5 3.6v2.4c-1.2.1-2.4-.2-3.5-.8v5.9c0 3.2-2.6 5.4-5.6 4.9-2.4-.4-4-2.5-3.8-5 .2-2.2 2-3.9 4.2-3.9.2 0 .4 0 .6.05v2.5c-.2-.05-.4-.1-.6-.1-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V3h2.5Z"/></svg>
+        <span>TikTok<small>@davidvalor7</small></span>
+      </a>
+      <a class="soc" href="https://www.linkedin.com/in/david-valor-5ba08a143" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.2 8.2h4.6V24H.2V8.2Zm7.4 0h4.4v2.16h.06c.62-1.1 2.12-2.26 4.36-2.26 4.66 0 5.52 3 5.52 6.94V24h-4.6v-7.06c0-1.68-.03-3.85-2.35-3.85-2.35 0-2.71 1.83-2.71 3.72V24H7.6V8.2Z"/></svg>
+        <span>LinkedIn<small>David Valor</small></span>
+      </a>
+    </div>
+  </section>
+
+<footer class="wrap">
+  David Valor — Desarrollador Web &amp; AI Engineer · Caracas, Venezuela ·
+  <a href="/blog">Opiniones</a> ·
+  <a href="https://wa.me/584129967051">WhatsApp</a> ·
+  <a href="https://www.linkedin.com/in/david-valor-5ba08a143">LinkedIn</a> ·
+  <a href="https://www.tiktok.com/@davidvalor7">TikTok @davidvalor7</a> ·
+  <a href="https://www.instagram.com/dvalorn/">Instagram</a> ·
+  <a href="mailto:davidvalorwork@gmail.com">Email</a>
+</footer>
+<script async src="https://www.tiktok.com/embed.js"></script>
+<script>
+(function(){
+  var secs=document.querySelectorAll('main>section, body>section');
+  if(!('IntersectionObserver' in window)){secs.forEach(function(s){s.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  secs.forEach(function(s){io.observe(s)});
+})();
+</script>
+</body>
+</html>

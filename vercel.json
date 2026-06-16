@@ -1,0 +1,10 @@
+{
+  "outputDirectory": "sitio-web",
+  "rewrites": [
+    { "source": "/consulta", "destination": "/consulta.html" },
+    { "source": "/gracias", "destination": "/gracias.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
+    { "source": "/casos/:slug", "destination": "/casos/:slug.html" }
+  ]
+}

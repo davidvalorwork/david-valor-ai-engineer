@@ -1,0 +1,14 @@
+# Solo se publica sitio-web/ (ver vercel.json outputDirectory)
+# Excluir todo lo demás del upload
+01-perfil-y-cv/
+02-freelance/
+03-propuestas-clientes/
+videos-proyecto/
+.claude/
+.git/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.bin
+*.pdf

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consulta gratis — Desarrollo Web & IA en Caracas | David Valor</title>
+<meta name="description" content="Cuéntame tu proyecto de desarrollo web, app o automatización con IA. Te respondo con alcance y costo. Caracas, Venezuela. Primera consulta gratis.">
+<link rel="canonical" href="https://davidvalor.vercel.app/consulta">
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#ea5536">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--orange:#ea5536;--accent:#f96a17;--bg:#0c0a09;--card:#1a1614;--txt:#f5f3f1;--mut:#b3aaa4}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+  .wrap{max-width:620px;margin:0 auto;padding:48px 22px 70px}
+  .back{color:var(--mut);text-decoration:none;font-size:14px}
+  .back:hover{color:var(--accent)}
+  h1{font-size:clamp(26px,5vw,38px);font-weight:900;letter-spacing:-1px;line-height:1.1;margin:18px 0 6px;text-align:center}
+  .sub{color:var(--mut);text-align:center;margin-bottom:30px}
+  .sub b{color:var(--accent)}
+  form{background:var(--card);border:1px solid #2a2421;border-radius:16px;padding:26px}
+  label{display:block;font-weight:700;font-size:14px;margin:16px 0 6px}
+  label:first-child{margin-top:0}
+  input,select,textarea{width:100%;background:#0c0a09;border:1px solid #3a322e;border-radius:10px;
+    padding:13px 14px;color:var(--txt);font-family:inherit;font-size:15px}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--orange)}
+  textarea{min-height:110px;resize:vertical}
+  .hp{display:none}
+  button{width:100%;margin-top:22px;padding:15px;border:0;border-radius:10px;background:var(--orange);
+    color:#fff;font-weight:800;font-size:16px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+  button:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(234,85,54,.4)}
+  .or{text-align:center;color:var(--mut);font-size:13px;margin:18px 0}
+  .wa{display:block;text-align:center;background:var(--card);border:1px solid #3a322e;border-radius:10px;
+    padding:14px;color:var(--txt);text-decoration:none;font-weight:700}
+  .wa:hover{border-color:var(--orange)}
+  .trust{text-align:center;color:var(--mut);font-size:13px;margin-top:18px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <a class="back" href="/">← David Valor · Desarrollo Web &amp; IA · Caracas</a>
+  <h1>Cuéntame tu proyecto</h1>
+  <p class="sub">Te respondo con <b>alcance y costo</b>, sin compromiso. Primera consulta gratis.</p>
+
+  <form action="https://formsubmit.co/davidvalorwork@gmail.com" method="POST">
+    <!-- Config FormSubmit -->
+    <input type="hidden" name="_subject" value="Nueva consulta — davidvalor.vercel.app">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://davidvalor.vercel.app/gracias">
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+
+    <label for="nombre">Nombre</label>
+    <input id="nombre" type="text" name="Nombre" required placeholder="Tu nombre">
+
+    <label for="contacto">WhatsApp o correo</label>
+    <input id="contacto" type="text" name="Contacto" required placeholder="+58... o tu@correo.com">
+
+    <label for="tipo">¿Qué necesitas?</label>
+    <select id="tipo" name="Tipo de proyecto" required>
+      <option value="">Selecciona…</option>
+      <option>Página web / Landing</option>
+      <option>Aplicación web</option>
+      <option>App móvil (iOS / Android)</option>
+      <option>Chatbot / IA / Automatización</option>
+      <option>Mantenimiento de un sistema existente</option>
+      <option>Otro</option>
+    </select>
+
+    <label for="presupuesto">Presupuesto aproximado (opcional)</label>
+    <select id="presupuesto" name="Presupuesto">
+      <option value="">Prefiero conversarlo</option>
+      <option>Menos de $500</option>
+      <option>$500 – $2.000</option>
+      <option>$2.000 – $5.000</option>
+      <option>Más de $5.000</option>
+    </select>
+
+    <label for="mensaje">Detalles del proyecto</label>
+    <textarea id="mensaje" name="Mensaje" placeholder="Cuéntame qué quieres lograr, plazos, lo que tengas en mente…"></textarea>
+
+    <button type="submit">Enviar consulta</button>
+  </form>
+
+  <p class="or">— o si prefieres —</p>
+  <a class="wa" href="https://wa.me/584129967051?text=Hola%20David,%20quiero%20una%20consulta%20para%20mi%20proyecto">Escríbeme directo por WhatsApp</a>
+  <p class="trust">Respondo en horas (GMT‑4). Caracas, Venezuela · remoto/híbrido/presencial.</p>
+</main>
+</body>
+</html>
